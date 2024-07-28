@@ -6,6 +6,11 @@ on:
   pull_request:
     branches:
       - master
+
+  # Allow job to be triggered manually.
+  workflow_dispatch:
+
+
 jobs:
   test:
     runs-on: ${{ matrix.platform }}
